@@ -1,67 +1,24 @@
 <div class="container">
-    <div style="margin-top: 7%; margin-left: 10%;">
-    <section class="cards">
-        <article class="card card--1">
-          <div class="card__info-hover">
-            <div class="card__clock-info">
-              <svg class="card__clock" viewBox="0 0 24 24">
-                <path d="" />
-              </svg><span class="card__time">30 min</span>
-            </div>
-      
+  <div style="margin-top: 7%;">
+  <section class="cards" >
+      <article class="card card--1" *ngFor="let quiz of quizzes">
+        <div class="card__info-hover">
+          <div class="card__clock-info">
+            <svg class="card__clock" viewBox="0 0 24 24">
+            </svg><span class="card__time">{{quiz.quizzes.duration}} Hrs</span>
           </div>
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> Quizz</span>
-            <h3 class="card__title">Python</h3>
-            <span class="card__by">by<a href="#" class="card__author" title="author"> J2EE APP</a></span>
-          </div>
-        </article>
-      
-        <article class="card card--2">
-          <div class="card__info-hover">
-            <div class="card__clock-info">
-              <svg class="card__clock" viewBox="0 0 24 24">
-                <path d="" />
-              </svg><span class="card__time">15 min</span>
-            </div>
-      
-          </div>
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category">Quizz</span>
-            <h3 class="card__title">Big Data</h3>
-            <span class="card__by">by<a href="#" class="card__author" title="author"> J2EE APP</a></span>
-          </div>
-        </article>
-
-        <article class="card card--3">
-            <div class="card__info-hover">
-              <div class="card__clock-info">
-                <svg class="card__clock" viewBox="0 0 24 24">
-                  <path d="" />
-                </svg><span class="card__time">10 min</span>
-              </div>
-        
-            </div>
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-              <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-              <span class="card__category">Quizz</span>
-              <h3 class="card__title">SQL</h3>
-              <span class="card__by">by<a href="#" class="card__author" title="author"> J2EE APP</a></span>
-            </div>
-          </article>
-      
-      </section>
-    </div>
-    </div>
-    
+        </div>
+        <div class="card__img"></div>
+        <a href="{{quiz.quizzes.url}}" class="card_link">
+          <div class="card__img--hover" style="background-image: url('../../assets/Cours_pic/{{quiz.quizzes.photo}}');"></div>
+        </a>
+        <div class="card__info">
+          <span class="card__category">{{quiz.quizzes.type}}</span>
+          <h3 class="card__title">{{quiz.quizzes.nom}}</h3>
+          <span class="card__by">by<a href="{{quiz.quizzes.url}}" class="card__author" title="author"> {{quiz.quizzes.maker}}</a></span>
+        </div>
+      </article>  
+    </section>
+  </div>
+  </div>
+  

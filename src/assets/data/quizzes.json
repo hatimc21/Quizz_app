@@ -1,0 +1,35 @@
+[
+    {
+        "quizzes":{
+            "id":0,
+            "nom":"Python",
+            "duration": 5,
+            "type": "Quizz",
+            "maker": "Hatim Chifa",
+            "photo": "python.jpeg",
+            "url": ""
+        }
+    },
+    {
+        "quizzes":{
+            "id":1,
+            "nom":"Big Data",
+            "duration": 5,
+            "type": "Quizz",
+            "maker": "Hatim Chifa",
+            "photo": "Big_Data.png",
+            "url": ""
+        }
+    },
+    {
+        "quizzes":{
+            "id":2,
+            "nom":"SQL",
+            "duration": 3,
+            "type": "Quizz",
+            "maker": "Hatim Chifa",
+            "photo": "sql_quizz.jpeg",
+            "url": ""
+        }
+    }
+]

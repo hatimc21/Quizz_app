@@ -1,0 +1,35 @@
+[
+    {
+        "cours":{
+            "id":0,
+            "nom":"Python",
+            "duration": 5,
+            "type": "Cours",
+            "maker": "Colin Morris",
+            "photo": "python.jpeg",
+            "url": "https://www.kaggle.com/learn/python"
+        }
+    },
+    {
+        "cours":{
+            "id":1,
+            "nom":"Big Data",
+            "duration": 5,
+            "type": "Cours",
+            "maker": "CARLO LEPELAARS",
+            "photo": "Big_Data.png",
+            "url": "https://www.kaggle.com/general/69415"
+        }
+    },
+    {
+        "cours":{
+            "id":2,
+            "nom":"SQL",
+            "duration": 3,
+            "type": "Cours",
+            "maker": "Rachael Tatman & Alexis Cook",
+            "photo": "sql_quizz.jpeg",
+            "url": "https://www.kaggle.com/learn/intro-to-sql"
+        }
+    }
+]

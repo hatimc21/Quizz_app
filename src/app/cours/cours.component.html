@@ -1,46 +1,23 @@
 <div class="container">
 <div style="margin-top: 7%;">
-<section class="cards">
-    <article class="card card--1">
+<section class="cards" >
+    <article class="card card--1" *ngFor="let cour of cours">
       <div class="card__info-hover">
         <div class="card__clock-info">
           <svg class="card__clock" viewBox="0 0 24 24">
-            <path d="" />
-          </svg><span class="card__time">5 Hrs</span>
+          </svg><span class="card__time">{{cour.cours.duration}} Hrs</span>
         </div>
-  
       </div>
       <div class="card__img"></div>
-      <a href="https://www.kaggle.com/learn/python" class="card_link">
-        <div class="card__img--hover"></div>
+      <a href="{{cour.cours.url}}" class="card_link">
+        <div class="card__img--hover" style="background-image: url('../../assets/Cours_pic/{{cour.cours.photo}}');"></div>
       </a>
       <div class="card__info">
-        <span class="card__category"> Cours</span>
-        <h3 class="card__title">Python</h3>
-        <span class="card__by">by<a href="https://www.kaggle.com/learn/python" class="card__author" title="author"> Colin Morris</a></span>
+        <span class="card__category">{{cour.cours.type}}</span>
+        <h3 class="card__title">{{cour.cours.nom}}</h3>
+        <span class="card__by">by<a href="{{cour.cours.url}}" class="card__author" title="author"> {{cour.cours.maker}}</a></span>
       </div>
-    </article>
-  
-    <article class="card card--2">
-      <div class="card__info-hover">
-        <div class="card__clock-info">
-          <svg class="card__clock" viewBox="0 0 24 24">
-            <path d="" />
-          </svg><span class="card__time">5 HRS</span>
-        </div>
-  
-      </div>
-      <div class="card__img"></div>
-      <a href="https://www.kaggle.com/general/69415" class="card_link">
-        <div class="card__img--hover"></div>
-      </a>
-      <div class="card__info">
-        <span class="card__category">Cours</span>
-        <h3 class="card__title">Big Data</h3>
-        <span class="card__by">by<a href="https://www.kaggle.com/general/69415" class="card__author" title="author"> CARLO LEPELAARS</a></span>
-      </div>
-    </article>
-  
+    </article>  
   </section>
 </div>
 </div>
