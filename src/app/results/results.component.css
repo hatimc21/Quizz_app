@@ -27,4 +27,8 @@
   .certif-smallorder span i {
     color: #666;
   }
+  .image-nt{
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #ccc;
+  }
   

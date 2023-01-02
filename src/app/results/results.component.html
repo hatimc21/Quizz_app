@@ -1,5 +1,11 @@
-
-<div class="certif-bigorder">
+<div *ngIf="!name" class="certif-bigorder">
+    <div class="certif-smallorder">
+        <span style="font-size:50px; font-weight:bold">NICE TRY!!!!!!</span>
+        <img src="assets/nicetry.gif" class="image-nt"/>
+    </div>
+</div>
+<div id="certificateid">
+<div *ngIf="name" class="certif-bigorder" id="certif">
     <div class="certif-smallorder">
            <span style="font-size:50px; font-weight:bold">QUIZZ_APP CERTIFICATE</span>
            <br>
@@ -10,4 +16,5 @@
            <span style="font-size:20px">with score of <b>{{scorper}} %</b></span>
            <span style="font-size:25px"><i>{{todaydate}}</i></span>
     </div>
-    </div>
+</div>
+</div>
