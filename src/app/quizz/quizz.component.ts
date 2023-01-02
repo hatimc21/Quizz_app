@@ -14,6 +14,8 @@ export class QuizzComponent implements OnInit,OnDestroy {
   currentQuestionIndex = 0;
   score = 0;
   timer : any;
+  name = '';
+  name1 = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -22,6 +24,7 @@ export class QuizzComponent implements OnInit,OnDestroy {
   ) {}
 
   ngOnInit(): void {
+
     const id = this.route.snapshot.paramMap.get('id');
     
     if(id){
@@ -45,6 +48,20 @@ export class QuizzComponent implements OnInit,OnDestroy {
   }
   ngOnDestroy(): void {
     clearInterval(this.timer);
+  }
+  startQuiz() {
+    this.name = this.name1;
+    this.currentQuestionIndex = 0;
+    this.score = 0;
+    this.timer = this.quizz.quizzes.duration * 60;
+    setInterval(() => {
+      this.timer--;
+      if (this.timer === 0) {
+         // Quiz is complete
+        clearInterval(this.timer);
+        this.showResults();
+      }
+    }, 1000);
   }
   submitAnswer(answer:any) {
     if (answer === this.quizz.quizzes.questions[this.currentQuestionIndex].correct) {

@@ -1,4 +1,10 @@
-<div class="quiz-container">
+<div *ngIf="!name" class="name-container">
+  <h2>Welcome to {{ quizz.quizzes.nom }} quizz Please enter your name:</h2>
+  <input type="text" [(ngModel)]="name1" placeholder="Enter your name" class="name-input">
+  <button (click)="startQuiz()" class="start-button">Lunch Quizz</button>
+</div>
+
+<div class="quiz-container" *ngIf="name">
     <h1>{{ quizz.quizzes.nom }}</h1>
     <h2>Time left: {{ math.floor(timer / 60) }} minutes {{ timer % 60 }} seconds</h2>
         

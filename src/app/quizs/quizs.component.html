@@ -5,7 +5,7 @@
         <div class="card__info-hover">
           <div class="card__clock-info">
             <svg class="card__clock" viewBox="0 0 24 24">
-            </svg><span class="card__time">{{quiz.quizzes.duration}}Hrs</span>
+            </svg><span class="card__time">{{quiz.quizzes.duration}}min</span>
           </div>
         </div>
         <div class="card__img"></div>
@@ -15,7 +15,7 @@
         <div class="card__info">
           <span class="card__category">{{quiz.quizzes.type}}</span>
           <h3 class="card__title">{{quiz.quizzes.nom}}</h3>
-          <span class="card__by">by<a href="{{quiz.quizzes.url}}" class="card__author" title="author"> {{quiz.quizzes.maker}}</a></span>
+          <span class="card__by">by<a [routerLink]="['quizz/',quiz.quizzes.id]" class="card__author" title="author"> {{quiz.quizzes.maker}}</a></span>
         </div>
       </article>  
     </section>
