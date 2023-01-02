@@ -1,0 +1,30 @@
+.certif-bigorder {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  
+  .certif-smallorder {
+    text-align: center;
+    width: 60%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 8px #ccc;
+  }
+  
+  .certif-smallorder span {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .certif-smallorder span b {
+    color: #0066cc;
+  }
+  
+  .certif-smallorder span i {
+    color: #666;
+  }
+  
