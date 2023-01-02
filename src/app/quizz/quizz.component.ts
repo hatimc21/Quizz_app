@@ -77,7 +77,7 @@ export class QuizzComponent implements OnInit,OnDestroy {
 
   showResults() {
     // Display the results to the user
-    alert(`Your score: ${this.score}/${this.quizz.quizzes.questions.length}`);
+    this.router.navigate(['/results'], { queryParams: { score: this.score, total: this.quizz.quizzes.questions.length, name: this.name, quizz_nom:this.quizz.quizzes.nom} });
   }
 }
 

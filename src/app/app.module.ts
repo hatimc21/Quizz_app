@@ -10,6 +10,7 @@ import { QuizsComponent } from './quizs/quizs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { QuizzComponent } from './quizz/quizz.component';
 import { FormsModule } from '@angular/forms';
+import { ResultsComponent } from './results/results.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     CoursComponent,
     QuizsComponent,
-    QuizzComponent
+    QuizzComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,

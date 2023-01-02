@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { CoursComponent } from './cours/cours.component';
 import { QuizsComponent } from './quizs/quizs.component';
 import { QuizzComponent } from './quizz/quizz.component';
+import { ResultsComponent } from './results/results.component';
 
 const routes: Routes = [
   {path:'cours', component: CoursComponent},
   {path:'quizzes', component: QuizsComponent},
-  {path: 'quizzes/quizz/:id', component: QuizzComponent}
+  {path: 'quizzes/quizz/:id', component: QuizzComponent},
+  {path: 'results', component: ResultsComponent}
   
 ];
 
