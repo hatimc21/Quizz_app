@@ -1,0 +1,17 @@
+<div class="quiz-container">
+    <h1>{{ quizz.quizzes.nom }}</h1>
+    <h2>Time left: {{ math.floor(timer / 60) }} minutes {{ timer % 60 }} seconds</h2>
+        
+    <div *ngFor="let question of quizz.quizzes.questions; index as i">
+      <div class="question" *ngIf="i === currentQuestionIndex">
+        <p>{{ question.ask }}</p>
+        <button *ngFor="let option of question.options" (click)="submitAnswer(option)">{{ option }}</button>
+      </div>
+    </div>
+
+    <div class="results" *ngIf="currentQuestionIndex === quizz.quizzes.questions.length">
+      <h1>Results</h1>
+      <p>Your score: {{ score }}/{{ quizz.quizzes.questions.length }}</p>
+    </div>
+  </div>
+  

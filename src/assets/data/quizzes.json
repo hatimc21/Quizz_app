@@ -6,10 +6,31 @@
             "duration": 5,
             "type": "Quizz",
             "maker": "Hatim Chifa",
-            "photo": "python.jpeg",
-            "url": ""
-        }
-    },
+            "photo": "python.png",
+            "questions":[
+                {
+                        "id":0,
+                        "ask": "what do we use to print ?",
+                        "options": [
+                            "print()",
+                            "printf()",
+                            "console.log()"
+                          ],
+                        "correct": "print()"
+                },
+                {
+                        "id":1,
+                        "ask": "To include the use of functions which are present in the random library, we must use the option",
+                        "options": [
+                            "import random",
+                            "random.h",
+                            "import.random"
+                          ],
+                          "correct": "import random"
+                }
+            ]
+            }
+        },
     {
         "quizzes":{
             "id":1,
@@ -17,8 +38,7 @@
             "duration": 5,
             "type": "Quizz",
             "maker": "Hatim Chifa",
-            "photo": "Big_Data.png",
-            "url": ""
+            "photo": "big_data.jpg"
         }
     },
     {
@@ -28,8 +48,7 @@
             "duration": 3,
             "type": "Quizz",
             "maker": "Hatim Chifa",
-            "photo": "sql_quizz.jpeg",
-            "url": ""
+            "photo": "sql.png"
         }
     }
 ]
