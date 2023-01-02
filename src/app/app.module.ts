@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { QuizzComponent } from './quizz/quizz.component';
 import { FormsModule } from '@angular/forms';
 import { ResultsComponent } from './results/results.component';
+import { TipsComponent } from './tips/tips.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ResultsComponent } from './results/results.component';
     CoursComponent,
     QuizsComponent,
     QuizzComponent,
-    ResultsComponent
+    ResultsComponent,
+    TipsComponent
   ],
   imports: [
     BrowserModule,
