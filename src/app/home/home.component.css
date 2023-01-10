@@ -65,6 +65,17 @@ header a img{
     text-decoration: none;
 
 }
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.shape1{
+    animation: rotation 6s infinite linear;
+}
 
 .content .imgBox{
     width: 600px;
@@ -76,6 +87,7 @@ header a img{
 }
 .content .imgBox img{
     max-width: 420px;
+    animation: rotation 6s infinite linear;
 }
 .cercle{
     position: absolute;
