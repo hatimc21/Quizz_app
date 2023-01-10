@@ -7,28 +7,136 @@
             "type": "Quizz",
             "maker": "Hatim Chifa",
             "photo": "python.png",
-            "questions":[
+            "questions" : [
                 {
-                        "id":0,
-                        "ask": "what do we use to print ?",
-                        "options": [
-                            "print()",
-                            "printf()",
-                            "console.log()"
-                          ],
-                        "correct": "print()"
+                    "id": 0,
+                    "ask": "What do we use to print?",
+                    "options": ["print()", "printf()", "console.log()"],
+                    "correct": "print()"
                 },
                 {
-                        "id":1,
-                        "ask": "To include the use of functions which are present in the random library, we must use the option",
-                        "options": [
-                            "import random",
-                            "random.h",
-                            "import.random"
-                          ],
-                          "correct": "import random"
+                    "id": 1,
+                    "ask": "To include the use of functions which are present in the random library, we must use the option",
+                    "options": ["import random", "random.h", "import.random"],
+                    "correct": "import random"
+                },
+                {
+                    "id": 2,
+                    "ask": "What is the correct syntax for defining a function in Python?",
+                    "options": ["function myFunction()", "def myFunction():", "function: myFunction"],
+                    "correct": "def myFunction():"
+                },
+                {
+                    "id": 3,
+                    "ask": "What is the correct way to create a new list in Python?",
+                    "options": ["new List()", "list()", "[]"],
+                    "correct": "[]"
+                },
+                {
+                    "id": 4,
+                    "ask": "What is the correct way to create a new tuple in Python?",
+                    "options": ["new Tuple()", "tuple()", "()"],
+                    "correct": "()"
+                },
+                {
+                    "id": 5,
+                    "ask": "What is the correct way to create a new set in Python?",
+                    "options": ["new Set()", "set()", "{}"],
+                    "correct": "set()"
+                },
+                {
+                    "id": 6,
+                    "ask": "What is the correct way to create a new set in Python?",
+                    "options": ["new Set()", "set()", "{}"],
+                    "correct": "set()"
+                },
+                {
+                    "id": 7,
+                    "ask": "What is the correct way to create a new dictionary in Python?",
+                    "options": ["new Dictionary()", "dict()", "{}"],
+                    "correct": "dict()"
+                },
+                {
+                    "id": 8,
+                    "ask": "What is the correct syntax for creating a for loop in Python?",
+                    "options": ["for i in range", "for (i = 0; i < n; i++)", "for i in range():"],
+                    "correct": "for i in range:"
+                },
+                {
+                    "id": 9,
+                    "ask": "What is the correct syntax for creating a while loop in Python?",
+                    "options": ["while i < n", "while (i < n)", "while i < n:"],
+                    "correct": "while i < n:"
+                },
+                {
+                    "id": 10,
+                    "ask": "What is the correct syntax for creating an if statement in Python?",
+                    "options": ["if (condition)", "if condition", "if condition:"],
+                    "correct": "if condition:"
+                },
+                {
+                    "id": 11,
+                    "ask": "What is the correct syntax for creating an if-else statement in Python?",
+                    "options": ["if (condition) else", "if condition else", "if condition: else:"],
+                    "correct": "if condition: else:"
+                },
+                {
+                    "id": 12,
+                    "ask": "What is the correct syntax for creating a try-except block in Python?",
+                    "options": ["try except", "try: except:", "try { } catch (Exception e)"],
+                    "correct": "try: except:"
+                },
+                {
+                    "id": 13,
+                    "ask": "What is the correct syntax for creating a class in Python?",
+                    "options": ["class MyClass", "class MyClass():", "class: MyClass"],
+                    "correct": "class MyClass:"
+                },
+                {
+                    "id": 14,
+                    "ask": "What is the correct syntax for creating an object of a class in Python?",
+                    "options": ["object = MyClass()", "MyClass object = new MyClass()", "object MyClass = new MyClass()"],
+                    "correct": "object = MyClass()"
+                },
+                {
+                    "id": 15,
+                    "ask": "What is the correct syntax for defining a method in a class in Python?",
+                    "options": ["def myMethod()", "void myMethod()", "function myMethod()"],
+                    "correct": "def myMethod()"
+                },
+                {
+                    "id": 16,
+                    "ask": "What is the correct syntax for calling a method of an object in Python?",
+                    "options": ["object.myMethod()", "object->myMethod()", "myMethod(object)"],
+                    "correct": "object.myMethod()"
+                },
+                {
+                    "id": 17,
+                    "ask": "What is the correct syntax for creating a lambda function in Python?",
+                    "options": ["lambda x: x", "function(x) { return x; }", "x -> x"],
+                    "correct": "lambda x: x"
+                },
+                {
+                    "id": 18,
+                    "ask": "What is the correct syntax for creating a list comprehension in Python?",
+                    "options": ["[x for x in iterable]", "list(x for x in iterable)", "for x in iterable: list(x)"],
+                    "correct": "[x for x in iterable]"
+                },
+                {
+                    "id": 19,
+                    "ask": "What is the correct syntax for creating a dictionary comprehension in Python?",
+                    "options": ["{key: value for (key, value) in iterable}", "dict(key: value for (key, value) in iterable)", "{(key, value) for (key, value) in iterable}"],
+                    "correct": "{key: value for (key, value) in iterable}"
+                },
+                {
+                    "id": 20,
+                    "ask": "What is the correct syntax for creating a generator expression in Python?",
+                    "options": ["(x for x in iterable)", "gen(x for x in iterable)", "generator(x for x in iterable)"],
+                    "correct": "(x for x in iterable)"
                 }
             ]
+                                  
+            
             }
         },
     {

@@ -12,6 +12,7 @@ import { QuizzComponent } from './quizz/quizz.component';
 import { FormsModule } from '@angular/forms';
 import { ResultsComponent } from './results/results.component';
 import { TipsComponent } from './tips/tips.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TipsComponent } from './tips/tips.component';
     QuizsComponent,
     QuizzComponent,
     ResultsComponent,
-    TipsComponent
+    TipsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@
         
     <div *ngFor="let question of quizz.quizzes.questions; index as i">
       <div class="question" *ngIf="i === currentQuestionIndex">
-        <p>{{ question.ask }}</p>
+        <p>{{i}}/{{quizz.quizzes.questions.length}} : {{ question.ask }}</p>
         <button *ngFor="let option of question.options" (click)="submitAnswer(option)">{{ option }}</button>
       </div>
     </div>
