@@ -5,7 +5,7 @@
             "nom": "Python",
             "duration": 5,
             "type": "Quizz",
-            "maker": "Hatim Chifa",
+            "maker": "Quizz app",
             "photo": "python.png",
             "questions": [
                 {
@@ -227,7 +227,7 @@
             "nom": "Big Data",
             "duration": 5,
             "type": "Quizz",
-            "maker": "Hatim Chifa",
+            "maker": "Quizz app",
             "photo": "big_data.jpg",
             "questions": [
                 {
@@ -369,7 +369,7 @@
             "nom": "SQL",
             "duration": 3,
             "type": "Quizz",
-            "maker": "Hatim Chifa",
+            "maker": "Quizz app",
             "photo": "sql.png",
             "questions": [
                 {

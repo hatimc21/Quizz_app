@@ -5,7 +5,7 @@
             "nom":"Python",
             "duration": 5,
             "type": "Cours",
-            "maker": "Colin Morris",
+            "maker": "Quizz app",
             "photo": "python.jpeg",
             "url": "python"
         }
@@ -16,7 +16,7 @@
             "nom":"Big Data",
             "duration": 5,
             "type": "Cours",
-            "maker": "CARLO LEPELAARS",
+            "maker": "Quizz app",
             "photo": "Big_Data.png",
             "url": "data"
         }
@@ -27,7 +27,7 @@
             "nom":"SQL",
             "duration": 3,
             "type": "Cours",
-            "maker": "Rachael Tatman & Alexis Cook",
+            "maker": "Quizz app",
             "photo": "sql_quizz.jpeg",
             "url": "sql"
         }
