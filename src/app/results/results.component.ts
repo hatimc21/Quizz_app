@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import jspdf from 'jspdf';
@@ -27,6 +27,7 @@ export class ResultsComponent implements OnInit {
     this.name = this.route.snapshot.queryParamMap.get('name');
     this.quizz_nom = this.route.snapshot.queryParamMap.get('quizz_nom');
     this.scorper = (this.score * 100) / this.total;
+    this.scorper = parseFloat(this.scorper.toFixed(2))
     this.todaydate = this.datePipe.transform(new Date(), 'dd/MM/yyyy');
     console.log(this.todaydate);
     this.generatePDF();
@@ -51,5 +52,18 @@ export class ResultsComponent implements OnInit {
         });
       }
     }, 1000);
+  }
+  @ViewChild('screenshotContainer', { static: false })
+  screenshotContainer!: ElementRef;
+  downloadScreenshot() {
+    html2canvas(this.screenshotContainer.nativeElement).then(canvas => {
+      // Convert the canvas to a data URL
+      let imgData = canvas.toDataURL('image/png');
+      // Create a link and trigger a download
+      let link = document.createElement('a');
+      link.download = 'screenshot.png';
+      link.href = imgData;
+      link.click();
+    });
   }
 }
