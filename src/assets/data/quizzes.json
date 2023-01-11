@@ -1,162 +1,528 @@
 [
     {
-        "quizzes":{
-            "id":0,
-            "nom":"Python",
+        "quizzes": {
+            "id": 0,
+            "nom": "Python",
             "duration": 5,
             "type": "Quizz",
             "maker": "Hatim Chifa",
             "photo": "python.png",
-            "questions" : [
+            "questions": [
                 {
                     "id": 0,
                     "ask": "What do we use to print?",
-                    "options": ["print()", "printf()", "console.log()"],
+                    "options": [
+                        "print()",
+                        "printf()",
+                        "console.log()"
+                    ],
                     "correct": "print()"
                 },
                 {
                     "id": 1,
                     "ask": "To include the use of functions which are present in the random library, we must use the option",
-                    "options": ["import random", "random.h", "import.random"],
+                    "options": [
+                        "import random",
+                        "random.h",
+                        "import.random"
+                    ],
                     "correct": "import random"
                 },
                 {
                     "id": 2,
                     "ask": "What is the correct syntax for defining a function in Python?",
-                    "options": ["function myFunction()", "def myFunction():", "function: myFunction"],
+                    "options": [
+                        "function myFunction()",
+                        "def myFunction():",
+                        "function: myFunction"
+                    ],
                     "correct": "def myFunction():"
                 },
                 {
                     "id": 3,
                     "ask": "What is the correct way to create a new list in Python?",
-                    "options": ["new List()", "list()", "[]"],
+                    "options": [
+                        "new List()",
+                        "list()",
+                        "[]"
+                    ],
                     "correct": "[]"
                 },
                 {
                     "id": 4,
                     "ask": "What is the correct way to create a new tuple in Python?",
-                    "options": ["new Tuple()", "tuple()", "()"],
+                    "options": [
+                        "new Tuple()",
+                        "tuple()",
+                        "()"
+                    ],
                     "correct": "()"
                 },
                 {
                     "id": 5,
                     "ask": "What is the correct way to create a new set in Python?",
-                    "options": ["new Set()", "set()", "{}"],
+                    "options": [
+                        "new Set()",
+                        "set()",
+                        "{}"
+                    ],
                     "correct": "set()"
                 },
                 {
                     "id": 6,
                     "ask": "What is the correct way to create a new set in Python?",
-                    "options": ["new Set()", "set()", "{}"],
+                    "options": [
+                        "new Set()",
+                        "set()",
+                        "{}"
+                    ],
                     "correct": "set()"
                 },
                 {
                     "id": 7,
                     "ask": "What is the correct way to create a new dictionary in Python?",
-                    "options": ["new Dictionary()", "dict()", "{}"],
+                    "options": [
+                        "new Dictionary()",
+                        "dict()",
+                        "{}"
+                    ],
                     "correct": "dict()"
                 },
                 {
                     "id": 8,
                     "ask": "What is the correct syntax for creating a for loop in Python?",
-                    "options": ["for i in range", "for (i = 0; i < n; i++)", "for i in range():"],
+                    "options": [
+                        "for i in range",
+                        "for (i = 0; i < n; i++)",
+                        "for i in range():"
+                    ],
                     "correct": "for i in range:"
                 },
                 {
                     "id": 9,
                     "ask": "What is the correct syntax for creating a while loop in Python?",
-                    "options": ["while i < n", "while (i < n)", "while i < n:"],
+                    "options": [
+                        "while i < n",
+                        "while (i < n)",
+                        "while i < n:"
+                    ],
                     "correct": "while i < n:"
                 },
                 {
                     "id": 10,
                     "ask": "What is the correct syntax for creating an if statement in Python?",
-                    "options": ["if (condition)", "if condition", "if condition:"],
+                    "options": [
+                        "if (condition)",
+                        "if condition",
+                        "if condition:"
+                    ],
                     "correct": "if condition:"
                 },
                 {
                     "id": 11,
                     "ask": "What is the correct syntax for creating an if-else statement in Python?",
-                    "options": ["if (condition) else", "if condition else", "if condition: else:"],
+                    "options": [
+                        "if (condition) else",
+                        "if condition else",
+                        "if condition: else:"
+                    ],
                     "correct": "if condition: else:"
                 },
                 {
                     "id": 12,
                     "ask": "What is the correct syntax for creating a try-except block in Python?",
-                    "options": ["try except", "try: except:", "try { } catch (Exception e)"],
+                    "options": [
+                        "try except",
+                        "try: except:",
+                        "try { } catch (Exception e)"
+                    ],
                     "correct": "try: except:"
                 },
                 {
                     "id": 13,
                     "ask": "What is the correct syntax for creating a class in Python?",
-                    "options": ["class MyClass", "class MyClass():", "class: MyClass"],
+                    "options": [
+                        "class MyClass",
+                        "class MyClass():",
+                        "class: MyClass"
+                    ],
                     "correct": "class MyClass:"
                 },
                 {
                     "id": 14,
                     "ask": "What is the correct syntax for creating an object of a class in Python?",
-                    "options": ["object = MyClass()", "MyClass object = new MyClass()", "object MyClass = new MyClass()"],
+                    "options": [
+                        "object = MyClass()",
+                        "MyClass object = new MyClass()",
+                        "object MyClass = new MyClass()"
+                    ],
                     "correct": "object = MyClass()"
                 },
                 {
                     "id": 15,
                     "ask": "What is the correct syntax for defining a method in a class in Python?",
-                    "options": ["def myMethod()", "void myMethod()", "function myMethod()"],
+                    "options": [
+                        "def myMethod()",
+                        "void myMethod()",
+                        "function myMethod()"
+                    ],
                     "correct": "def myMethod()"
                 },
                 {
                     "id": 16,
                     "ask": "What is the correct syntax for calling a method of an object in Python?",
-                    "options": ["object.myMethod()", "object->myMethod()", "myMethod(object)"],
+                    "options": [
+                        "object.myMethod()",
+                        "object->myMethod()",
+                        "myMethod(object)"
+                    ],
                     "correct": "object.myMethod()"
                 },
                 {
                     "id": 17,
                     "ask": "What is the correct syntax for creating a lambda function in Python?",
-                    "options": ["lambda x: x", "function(x) { return x; }", "x -> x"],
+                    "options": [
+                        "lambda x: x",
+                        "function(x) { return x; }",
+                        "x -> x"
+                    ],
                     "correct": "lambda x: x"
                 },
                 {
                     "id": 18,
                     "ask": "What is the correct syntax for creating a list comprehension in Python?",
-                    "options": ["[x for x in iterable]", "list(x for x in iterable)", "for x in iterable: list(x)"],
+                    "options": [
+                        "[x for x in iterable]",
+                        "list(x for x in iterable)",
+                        "for x in iterable: list(x)"
+                    ],
                     "correct": "[x for x in iterable]"
                 },
                 {
                     "id": 19,
                     "ask": "What is the correct syntax for creating a dictionary comprehension in Python?",
-                    "options": ["{key: value for (key, value) in iterable}", "dict(key: value for (key, value) in iterable)", "{(key, value) for (key, value) in iterable}"],
+                    "options": [
+                        "{key: value for (key, value) in iterable}",
+                        "dict(key: value for (key, value) in iterable)",
+                        "{(key, value) for (key, value) in iterable}"
+                    ],
                     "correct": "{key: value for (key, value) in iterable}"
                 },
                 {
                     "id": 20,
                     "ask": "What is the correct syntax for creating a generator expression in Python?",
-                    "options": ["(x for x in iterable)", "gen(x for x in iterable)", "generator(x for x in iterable)"],
+                    "options": [
+                        "(x for x in iterable)",
+                        "gen(x for x in iterable)",
+                        "generator(x for x in iterable)"
+                    ],
                     "correct": "(x for x in iterable)"
                 }
             ]
-                                  
-            
-            }
-        },
-    {
-        "quizzes":{
-            "id":1,
-            "nom":"Big Data",
-            "duration": 5,
-            "type": "Quizz",
-            "maker": "Hatim Chifa",
-            "photo": "big_data.jpg"
         }
     },
     {
-        "quizzes":{
-            "id":2,
-            "nom":"SQL",
+        "quizzes": {
+            "id": 1,
+            "nom": "Big Data",
+            "duration": 5,
+            "type": "Quizz",
+            "maker": "Hatim Chifa",
+            "photo": "big_data.jpg",
+            "questions": [
+                {
+                    "id": 0,
+                    "ask": "Which of the following is a big data querying tool?",
+                    "options": [
+                        "Apache Drill",
+                        "SQL Server Management Studio",
+                        "Oracle SQL Developer"
+                    ],
+                    "correct": "Apache Drill"
+                },
+                {
+                    "id": 1,
+                    "ask": "What is the main goal of big data?",
+                    "options": [
+                        "Storing large amounts of data",
+                        "Processing large amounts of data",
+                        "Both A and B"
+                    ],
+                    "correct": "Both A and B"
+                },
+                {
+                    "id": 2,
+                    "ask": "Which of the following is a big data technology?",
+                    "options": [
+                        "Hadoop",
+                        "MySQL",
+                        "Excel"
+                    ],
+                    "correct": "Hadoop"
+                },
+                {
+                    "id": 3,
+                    "ask": "Which of the following is not a component of the Hadoop ecosystem?",
+                    "options": [
+                        "Hive",
+                        "Pig",
+                        "WordPress"
+                    ],
+                    "correct": "WordPress"
+                },
+                {
+                    "id": 4,
+                    "ask": "Which of the following is a method of data ingest in big data?",
+                    "options": [
+                        "Batch Processing",
+                        "Stream Processing",
+                        "Both A and B"
+                    ],
+                    "correct": "Both A and B"
+                },
+                {
+                    "id": 5,
+                    "ask": "Which of the following is a NoSQL database?",
+                    "options": [
+                        "MongoDB",
+                        "Oracle",
+                        "SQL Server"
+                    ],
+                    "correct": "MongoDB"
+                },
+                {
+                    "id": 6,
+                    "ask": "What is the role of a data lake in big data?",
+                    "options": [
+                        "Storing and managing large amounts of raw data",
+                        "Providing a single source of truth for an organization",
+                        "Both A and B"
+                    ],
+                    "correct": "Both A and B"
+                },
+                {
+                    "id": 7,
+                    "ask": "What is the purpose of a data pipeline in big data?",
+                    "options": [
+                        "Automating the process of moving data between systems",
+                        "Storing data in a centralized location",
+                        "Performing real-time analytics on streaming data"
+                    ],
+                    "correct": "Automating the process of moving data between systems"
+                },
+                {
+                    "id": 8,
+                    "ask": "Which of the following is a big data processing engine?",
+                    "options": [
+                        "Apache Spark",
+                        "Microsoft Access",
+                        "PostgreSQL"
+                    ],
+                    "correct": "Apache Spark"
+                },
+                {
+                    "id": 9,
+                    "ask": "Which of the following is a big data storage system?",
+                    "options": [
+                        "Apache Cassandra",
+                        "SQLite",
+                        "IBM DB2"
+                    ],
+                    "correct": "Apache Cassandra"
+                },
+                {
+                    "id": 10,
+                    "ask": "What is the main goal of data governance in big data?",
+                    "options": [
+                        "Ensuring data quality and compliance",
+                        "Storing and managing data",
+                        "Performing analytics on data"
+                    ],
+                    "correct": "Ensuring data quality and compliance"
+                },
+                {
+                    "id": 11,
+                    "ask": "What is the main benefit of using a distributed file system in big data?",
+                    "options": [
+                        "Scalability",
+                        "Reliability",
+                        "Both A and B"
+                    ],
+                    "correct": "Both A and B"
+                },
+                {
+                    "id": 12,
+                    "ask": "Which of the following is a big data visualization tool?",
+                    "options": [
+                        "Tableau",
+                        "SQL Server Reporting Services",
+                        "Crystal Reports"
+                    ],
+                    "correct": "Tableau"
+                }
+            ]
+        }
+    },
+    {
+        "quizzes": {
+            "id": 2,
+            "nom": "SQL",
             "duration": 3,
             "type": "Quizz",
             "maker": "Hatim Chifa",
-            "photo": "sql.png"
+            "photo": "sql.png",
+            "questions": [
+                {
+                    "id": 0,
+                    "ask": "What type of join is used to return unmatched rows from the right table?",
+                    "options": [
+                        "RIGHT JOIN",
+                        "LEFT JOIN",
+                        "OUTER JOIN"
+                    ],
+                    "correct": "RIGHT JOIN"
+                },
+                {
+                    "id": 1,
+                    "ask": "What command is used to select data from a table?",
+                    "options": [
+                        "SELECT",
+                        "INSERT",
+                        "UPDATE"
+                    ],
+                    "correct": "SELECT"
+                },
+                {
+                    "id": 2,
+                    "ask": "What command is used to insert data into a table?",
+                    "options": [
+                        "INSERT",
+                        "SELECT",
+                        "UPDATE"
+                    ],
+                    "correct": "INSERT"
+                },
+                {
+                    "id": 3,
+                    "ask": "What command is used to update data in a table?",
+                    "options": [
+                        "UPDATE",
+                        "SELECT",
+                        "INSERT"
+                    ],
+                    "correct": "UPDATE"
+                },
+                {
+                    "id": 4,
+                    "ask": "What command is used to delete data from a table?",
+                    "options": [
+                        "DELETE",
+                        "UPDATE",
+                        "SELECT"
+                    ],
+                    "correct": "DELETE"
+                },
+                {
+                    "id": 5,
+                    "ask": "What clause is used to filter the results of a SELECT statement?",
+                    "options": [
+                        "WHERE",
+                        "HAVING",
+                        "ORDER BY"
+                    ],
+                    "correct": "WHERE"
+                },
+                {
+                    "id": 6,
+                    "ask": "What is the name of the default database in SQL?",
+                    "options": [
+                        "mysql",
+                        "postgres",
+                        "SQLite"
+                    ],
+                    "correct": "SQLite"
+                },
+                {
+                    "id": 7,
+                    "ask": "What clause is used to group the results of a SELECT statement?",
+                    "options": [
+                        "GROUP BY",
+                        "HAVING",
+                        "ORDER BY"
+                    ],
+                    "correct": "GROUP BY"
+                },
+                {
+                    "id": 8,
+                    "ask": "What clause is used to sort the results of a SELECT statement?",
+                    "options": [
+                        "ORDER BY",
+                        "GROUP BY",
+                        "HAVING"
+                    ],
+                    "correct": "ORDER BY"
+                },
+                {
+                    "id": 9,
+                    "ask": "What keyword is used to retrieve unique values in a SELECT statement?",
+                    "options": [
+                        "DISTINCT",
+                        "UNIQUE",
+                        "ALL"
+                    ],
+                    "correct": "DISTINCT"
+                },
+                {
+                    "id": 10,
+                    "ask": "What operator is used to compare values in a WHERE clause?",
+                    "options": [
+                        "LIKE",
+                        "IN",
+                        "BETWEEN"
+                    ],
+                    "correct": "LIKE"
+                },
+                {
+                    "id": 11,
+                    "ask": "What type of join is used to return only matching rows?",
+                    "options": [
+                        "INNER JOIN",
+                        "OUTER JOIN",
+                        "FULL JOIN"
+                    ],
+                    "correct": "INNER JOIN"
+                },
+                {
+                    "id": 12,
+                    "ask": "What type of join is used to return all rows from both tables?",
+                    "options": [
+                        "FULL JOIN",
+                        "OUTER JOIN",
+                        "INNER JOIN"
+                    ],
+                    "correct": "FULL JOIN"
+                },
+                {
+                    "id": 13,
+                    "ask": "What type of join is used to return unmatched rows from one table?",
+                    "options": [
+                        "OUTER JOIN",
+                        "LEFT JOIN",
+                        "RIGHT JOIN"
+                    ],
+                    "correct": "OUTER JOIN"
+                },
+                {
+                    "id": 14,
+                    "ask": "What type of join is used to return unmatched rows from the left table?",
+                    "options": [
+                        "LEFT JOIN",
+                        "RIGHT JOIN",
+                        "OUTER JOIN"
+                    ],
+                    "correct": "LEFT JOIN"
+                }
+            ]
         }
     }
 ]
