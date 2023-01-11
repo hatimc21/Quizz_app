@@ -13,6 +13,9 @@ import { FormsModule } from '@angular/forms';
 import { ResultsComponent } from './results/results.component';
 import { TipsComponent } from './tips/tips.component';
 import { HomeComponent } from './home/home.component';
+import { DATAComponent } from './data/data.component';
+import { PythonComponent } from './python/python.component';
+import { SqlComponent } from './sql/sql.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { HomeComponent } from './home/home.component';
     QuizzComponent,
     ResultsComponent,
     TipsComponent,
-    HomeComponent
+    HomeComponent,
+    DATAComponent,
+    PythonComponent,
+    SqlComponent
   ],
   imports: [
     BrowserModule,

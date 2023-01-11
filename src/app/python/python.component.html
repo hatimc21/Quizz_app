@@ -1,0 +1,315 @@
+<main>
+
+    <!-- Course Section -->
+    <section class="container" id="course">
+        <div class="text-center mb-5" style="margin-top: 2%;">
+            <h2>Bases de Python</h2>
+            <p class="p-2 p-lg-0">It is a long established fact that a reader will be distracted by the readable
+                content of <br> a page when looking at its layout</p>
+        </div>
+        <div class="row  justify-content-between gy-5 gx-0">
+
+            <div class="card flex-md-row col-lg-12">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Introduction à Python</h2>
+                    </div>
+                    <h4 class="card-title" style="margin-top: 2%;">Présentation des outils de programmation</h4>
+                    <p class="card-text text-muted">Dans cette introduction à Python pour la programmation 
+                        scientifique, nous utiliserons Python comme langage et les bibliothèques NumPy 
+                        et Matplotlib pour le calcul scientifique et la visualisation. <br> Les programmes 
+                        de base en Python (qui n’utilisent pas NumPy ou Matplotlib)pourront être exécutés 
+                        en ligne directement au sein de ce cours grâce à Online Python Tutor. <br> Pour exécuter 
+                        les programmes de ce cours sur votre ordinateur, il vous faudra disposer de Python 
+                        et des bibliothèques NumPy et Matplotlib.
+                    </p>
+                    <h4 class="card-title" style="margin-top: 2%;">Exécution d’un premier programme</h4>
+                    <p class="card-text text-muted">Voici un premier exemple de programme : <br>
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"></p>for i in [0, 1, 2]:<br>
+                        print("valeur :", i) <br> print("Fin")
+                        </code></pre>
+                        </div>
+                    <h4 class="text-primary">Note</h4><p class="card-text text-muted">Pour exécuter ce code pas 
+                        à pas, utiliser le bouton « Forward ». 
+                        La prochaine ligne à exécuter est indiquée par une flèche rouge. Une flèche verte signale la ligne qui vient d’être exécutée.
+                    <p class="card-text text-muted">L’affichage après exécution est : <br>
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"></p>valeur : 0<br>
+                    valeur : 1<br>valeur : 2<br> Fin
+                        </code></pre>
+                        </div>
+                </div>
+            </div>
+            <div class="card flex-md-row col-lg-12">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Quelques bases rapides en Python</h2>
+                    </div>
+                    <h4 class="card-title" style="margin-top: 2%;">Utilisation en mode interactif</h4>
+                    <h4 class="text-primary">Note</h4><p class="card-text text-muted">Si vous n’utilisez pas Spyder mais IDLE, vous pouvez consulter cette introduction à IDLE.
+                    <p class="card-text text-muted">Dans Spyder, on dispose d’une zone de fenêtre pour 
+                        l’interpréteur de commandes <b>IPython</b>. Son invite de commande est différente 
+                        de celle de l’interpréteur Python standard <br>(qui est >>>). 
+                        Elle se présente de la façon suivante :
+                    </p>
+                    <div id="codebox">
+                        <pre><code>
+                    <p class="card-text text-muted"> In [1]:</p>
+                    </code></pre>
+                    </div>
+                    <p class="card-text text-muted">Exemple de première utilisation de IPython : <br>
+                        <div id="codebox">
+                            <pre><code>
+                    <p class="card-text text-muted"></p>In [1]: 3 * 4<br>
+                       Out[1]: 12 <br> In [2]: 5 + 2 <br> Out[2]: 7 
+                        </code></pre>
+                        </div>  
+                    <p class="card-text text-muted">Les parties qui débutent par <b>In et Out</b> correspondent aux entrées et sorties respectivement.
+                    </p>
+                    <h4 class="card-title" style="margin-top: 2%;">Premiers calculs</h4>
+                    <p class="card-text text-muted">Testez les calculs suivants :
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"> >>> 4 + 5<br> >>> 3 - 7       # les espaces sont optionnels<br>
+                        >>> 5 + 2 * 3      # la priorité des opérations mathématiques est-elle respectée ? <br>
+                        >>> (6 + 3) * 2
+                    </p>
+                        </code></pre>
+                        </div>
+                    
+                    <p class="card-text text-muted">Pour calculer une puissance, on utilise **.
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"> >>> 5**2</p>
+                        </code></pre>
+                    </div>
+                    <h4 class="card-title" style="margin-top: 2%;">L’opérateur /</h4>
+                        <p class="card-text text-muted"><b>Exemple</b> <br> 
+                            <div id="codebox">
+                                <pre><code>
+                            <p class="card-text text-muted"> >>> 7 / 2<br> 3.5 <br>
+                            </code></pre>
+                            </div>
+                           
+                        <p class="card-text text-muted"> Pour réaliser une division entière, il faut utiliser // :
+                            <div id="codebox">
+                                <pre><code>
+                            <p><br> >>> 7 // 2 <br> 3 <br> </p>
+                            </code></pre>
+                            </div>
+                    <h4 class="card-title" style="margin-top: 2%;">L’opérateur %</h4>
+                        <p class="card-text text-muted"> L’opérateur % (appelé <b>opérateur modulo</b>) fournit le reste de la division entière d’un nombre par un autre. <br>
+                        <p class="card-text text-muted"> <b>Exemple</b><br> 
+                            <div id="codebox">
+                                <pre><code>
+                            <p class="card-text text-muted"> >>> 7 % 2
+                        <br> 1 <br> >>> 6 % 2<br> 0 <br>
+                            </code></pre>
+                            </div>  
+                        
+                    <h4 class="card-title" style="margin-top: 2%;">Affectation</h4>
+                    <div id="codebox">
+                        <pre><code>
+                    <p class="card-text text-muted"> >>> a = 2<br> >>> a <br> 2 <br> >>> b = a + 3
+                            <br> >>> b <br> 5
+                    </code></pre>
+                    </div>
+                        
+                        <p class="card-text text-muted"> La première ligne contient l’instruction a = 2. 
+                            Pour comprendre cette instruction, il faut imaginer que les informations sont stockées
+                            dans des boîtes au sein de la mémoire de l’ordinateur. Pour manipuler les informations, 
+                            on donne des noms à ces boîtes. Ici on crée une boîte appelée a et on lui affecte la valeur 2. 
+                            Par la suite, on parlera de la <b>variable</b> a, puisque a peut contenir des valeurs variables. 
+                            Autrement dit, l’instruction a = 2 est une instruction <b>d”affection</b> qui a pour effet de mettre 
+                            la <b>valeur</b> 2 dans la <b>variable</b> a.
+                    <h4 class="card-title" style="margin-top: 2%;">Affichage - la fonction <b>print()</b></h4>
+                        <p class="card-text text-muted"> Pour afficher, on utilise la fonction <b>print().</b> <br>
+                            <div id="codebox">
+                                <pre><code>
+                            <p class="card-text text-muted"> >>> print("bonjour") <br> bonjour <br> >>> a = 5 <br> >>> print(a)
+                                <br> 5
+                            </code></pre>
+                            </div>
+                        
+                        <p class="card-text text-muted"> Il est possible de réaliser plusieurs affichages à la suite. 
+                            Pour cela, on sépare les éléments par des virgules. <br>
+                            <div id="codebox">
+                                <pre><code>
+                            <p class="card-text text-muted"> >>> a = 5 <br> >>> print("a vaut", a) <br> a vaut 5
+                            </code></pre>
+                            </div>
+                        
+                </div>
+            </div>
+            <div class="card flex-md-row col-lg-12">
+                <div class="card-body">
+                    <h4 class="text-primary"><span>&#9888;</span>Avertissement</h4>
+                    <p class="card-text text-muted"> Pour ne pas aller à la ligne et continuer sur la même ligne lors 
+                        du prochain print, on ajoute le paramètre <b>end=" " </b>:
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"><b>print("a vaut", a, end=" ")</b>
+                        </code></pre>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="card flex-md-row col-lg-12">
+                <div class="card-body">
+                    <h4 class="card-title">La fonction <b>range()</b></h4>
+                     <p class="card-text text-muted">Si vous avez besoin de créer sur une suite d’entiers, 
+                        vous pouvez utiliser la fonction <b>range()</b>. Elle génère une suite arithmétique.</p>
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"> >>> range(10) <br> range(0, 10)
+                        </code></pre>
+                        </div>
+                     
+                     <p class="card-text text-muted">En Python 3, si on souhaite afficher les valeurs, 
+                        il est nécessaire de convertir le résultat en liste grâce à la fonction list(). Par exemple :</p>
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"> >>> list(range(10)) <br> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] <br>
+                        </code></pre>
+                        </div>
+                     
+                    <p class="card-text text-muted">Le nombre de fin qui lui est passé n’est jamais dans la liste générée. 
+                        Par exemple, range(10) génère 10 valeurs, exactement les indices des éléments d’une séquence 
+                        de longueur 10. Il est possible de faire commencer l’intervalle à un autre nombre, 
+                        ou de spécifier un incrément différent (même négatif) :</p>
+                        <div id="codebox">
+                            <pre><code>
+                        <p class="card-text text-muted"> >>> list(range(5, 10)) <br> [5, 6, 7, 8, 9] 
+                        <br> >>> list(range(0, 10, 3)) <br> [0, 3, 6, 9] <br> >>> list(range(-10, -100, -30))
+                        <br> [-10, -40, -70]
+                        </code></pre>
+                        </div>
+                    
+                    <p class="card-text text-muted">De manière générale, on a :</p>
+                    <p class="card-text text-muted"> range(valeur_initiale, borne_de_fin, pas)
+                    <p class="card-text text-muted">Le pas peut être positif ou négatif. 
+                        La valeur de la borne de fin (maximale ou minimale) n’est jamais atteinte.</p>
+                    <p class="card-text text-muted"><b>Exercice</b></p>
+                    <p class="card-text text-muted">Créer une liste contenant les entiers pairs allant de 10 à 20.</p>
+                    <h4 class="card-title">Accès aux éléments d’une liste</h4>
+                    <div id="codebox">
+                        <pre><code>
+                    <p class="card-text text-muted"> >>> a = list(range(1,10,2)) <br> >>> a <br> [1, 3, 5, 7, 9] 
+                        <br> >>> a[0] <br> 1 <br> >>> a[2] <br> 5
+                    </code></pre>
+                    </div>
+                     
+                    <p class="card-text text-muted">Pour accéder à un élément d’une liste, 
+                        on indique entre crochets [] l’indice de l’élément.
+                    </p>
+                </div>
+            </div>
+            <div class="card flex-md-row col-lg-12">
+                <div class="card-body">
+                    <h4 class="text-primary"><span>&#9888;</span>Avertissement</h4>
+                        <p class="card-text text-muted">En Python, l’indice du premier élément d’une liste est 0 
+                        (ceci est à distinguer d’autres langages).</p>
+                </div>
+            </div>
+            <div class="card flex-md-row col-lg-12">
+                <div class="card-body">
+                    <h4 class="card-title">La fonction <b>len()</b></h4>
+                    <p class="card-text text-muted">La fonction <b>len() </b>renvoie le nombre d’éléments. Par exemple :</p>
+                    <div id="codebox">
+                        <pre><code>
+                    <p class="card-text text-muted"> >>> a = list(range(7,10)) <br> >>> a <br> [7, 8, 9]
+                        <br> >>> len(a) <br> len(a) <br>
+                    </code></pre>
+                    </div>
+                    
+                    <h4 class="card-title">Lecture d’informations au clavier - la fonction <b>input()</b></h4>
+                    <div id="codebox">
+                        <pre><code>
+                    <p class="card-text text-muted">x = int(input("Donnez un entier : "))</p>
+                    </code></pre>
+                    </div>
+                    
+                    <p class="card-text text-muted"> Par défaut, la fonction <b>input()</b> renvoie une chaîne de caractères. 
+                        Il faut donc utiliser la fonction <b>int()</b> qui permet d’obtenir un entier.<br>
+                    <h4 class="card-title">Autre exemple de programme</h4>
+                    <div id="codebox">
+                        <pre><code>
+                    <p class="card-text text-muted">n = 3 <br>
+                        print("Je vais vous demander", n, "nombres")<br>
+                        for i in range(n): <br> 
+                            x = int(input("Donnez un nombre : ")) <br> 
+                            if x > 0: <br> 
+                                print(x, "est positif") <br> 
+                            else: <br> 
+                                print(x, "est négatif ou nul")<br> 
+                        print("Fin")</p>
+                    </code></pre>
+                    </div>
+                    
+                        <button type="button">Click Me!</button> <br> 
+                        <br> 
+                        <p class="card-text text-muted">Pour faire une répétition : l’instruction <b>for</b></p>
+                        <div id="codebox">
+                            <pre><code>
+                                <p class="card-text text-muted"> for i in range(n): <br>
+                                    bloc d'instructions
+                        </code></pre>
+                        </div>
+                        <p class="card-text text-muted">Pour faire un test : l’instruction <b>if</b></p>
+                        <div id="codebox">
+                            <pre><code>
+                                <p class="card-text text-muted"> if x > 0: <br>
+                                    print(x, "est positif") <br>
+                                else: <br> 
+                                    print(x, "est négatif ou nul")
+                        </code></pre>
+                        </div>
+                        <p class="card-text text-muted">Les différentes sortes d’instruction</p>
+                        <p class="card-text text-muted"> 
+                            <ul>
+                            <li>les instructions simples</li>
+                            <li>les instructions composées comme <b>if</b> ou <b>for</b></li>
+                            <li>les blocs d’instructions</li>
+                            </ul> 
+                </div>
+            </div>
+            <div class="card flex-md-row col-lg-12">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Règles générales d’écriture</h2>
+                    </div>
+                    <h4 class="card-title" style="margin-top: 2%;">Les identificateurs</h4>
+                    <p class="card-text text-muted">Un identificateur est une suite de caractères servant à désigner 
+                        les différentes entitées manipulées par un programme : variables, fonctions, classes…</p>
+                    <p class="card-text text-muted">En Python, un identificateur est formé de lettres ou de chiffres. 
+                        Il ne contient pas d’espace. Le premier caractère doit obligatoirement être une lettre. 
+                        Il peut contenir le caractère <br> « _ » (underscore, en français « souligné »). 
+                        Il est sensible à la casse (distinction entre majuscule et minuscule).</p>
+                    <h4 class="card-title">Les mots-clés</h4>
+                    <p class="card-text text-muted">Les mots réservés par le langage Python (<b>if</b>, <b>for,</b> etc.) 
+                        ne peuvent pas être utilisés comme identificateurs.</p>
+                    <h4 class="card-title">Les commentaires</h4>
+                    <p class="card-text text-muted">Les commentaires usuels:</p> 
+                    <div id="codebox">
+                        <pre><code>
+                            <p class="card-text text-muted"> <i># Ceci est un commentaire</i></p>
+                    </code></pre>
+                    </div>
+                    <p class="card-text text-muted">Les commentaires en fin de ligne:</p> 
+                    <div id="codebox">
+                        <pre><code>
+                            <p class="card-text text-muted"> a = 2 <i># Ceci est un commentaire</i></p>
+                    </code></pre>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+</main>
