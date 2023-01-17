@@ -8,6 +8,7 @@ import * as math from 'mathjs';
   templateUrl: './quizz.component.html',
   styleUrls: ['./quizz.component.css']
 })
+
 export class QuizzComponent implements OnInit,OnDestroy {
   math = math;
   quizz: any;
@@ -22,7 +23,13 @@ export class QuizzComponent implements OnInit,OnDestroy {
     private http: HttpClient,
     private router: Router
   ) {}
-
+  shuffleArray(array:any) {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
   ngOnInit(): void {
 
     const id = this.route.snapshot.paramMap.get('id');
@@ -30,6 +37,7 @@ export class QuizzComponent implements OnInit,OnDestroy {
     if(id){
       this.http.get('assets/data/quizzes.json').subscribe((quizzes: any) =>{
         this.quizz = quizzes[id];
+        this.quizz.quizzes.questions = this.shuffleArray(this.quizz.quizzes.questions);
         console.log(this.quizz);
         this.timer = this.quizz.quizzes.duration * 60;
         console.log(this.timer);
