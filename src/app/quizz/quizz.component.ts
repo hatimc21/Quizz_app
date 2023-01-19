@@ -38,6 +38,10 @@ export class QuizzComponent implements OnInit,OnDestroy {
       this.http.get('assets/data/quizzes.json').subscribe((quizzes: any) =>{
         this.quizz = quizzes[id];
         this.quizz.quizzes.questions = this.shuffleArray(this.quizz.quizzes.questions);
+        for (let j = 0; j < this.quizz.quizzes.questions.length; j++) {
+          this.quizz.quizzes.questions[j].options = this.shuffleArray(this.quizz.quizzes.questions[j].options)
+          
+        }
         console.log(this.quizz);
         this.timer = this.quizz.quizzes.duration * 60;
         console.log(this.timer);
@@ -49,7 +53,7 @@ export class QuizzComponent implements OnInit,OnDestroy {
             clearInterval(this.timer);
             this.showResults();
           }
-        }, 1000);
+        }, 10000);
       });
       
     }
